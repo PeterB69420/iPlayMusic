@@ -12,8 +12,8 @@ export default function HomePage() {
             <Header search />
             <section className="home">
                 <h2 className="home__title">events feed</h2>
-                <Tags />
             </section>
+            <Tags />
         </Wrapper>
         <Footer />
     </>
