@@ -1,0 +1,18 @@
+@use "../utils/variables" as *;
+
+.home {
+    font-family: 'Poppins', sans-serif;
+    padding: 1rem;
+    
+    &__title {
+        font-size: 2rem;
+        font-weight: bolder;
+        text-transform: capitalize;
+        background: linear-gradient(90deg, $primary-gradient, $secondary-gradient);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        color: transparent;
+        margin-bottom: 1rem;
+    }
+}

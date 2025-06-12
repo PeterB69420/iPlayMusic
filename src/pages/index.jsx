@@ -6,6 +6,8 @@ import Wrapper from "../components/wrapper";
 import "../styles/pages/_login.scss";
 import "../styles/components/_splashscreen.scss";
 import "animate.css";
+import { Link } from "react-router";
+import "../styles/base/_resets.scss"
 
 export default function Login() {
     const [showSplash, setShowSplash] = useState(true);
@@ -62,7 +64,7 @@ export default function Login() {
                                 />
                                 <IoIosKey className="login__icon" />
                             </div>
-                            <button className="login__button" type="submit">Log In</button>
+                            <Link to="/onboarding" className="login__button" type="submit">Log In</Link>
                         </form>
                         <div className="touch">
                             <IoIosFingerPrint className="touch__icon" />

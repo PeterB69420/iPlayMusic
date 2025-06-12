@@ -5,6 +5,7 @@ import "../styles/pages/_onboarding.scss";
 import { IoRadioSharp } from "react-icons/io5";
 import { IoIosHeart } from "react-icons/io";
 import { IoIosMusicalNote } from "react-icons/io";
+import OnboardingBg from "../components/onboardingbg";
 
 export default function Onboarding() {
     const [step, setStep] = useState(1);
@@ -19,13 +20,15 @@ export default function Onboarding() {
     };
 
     return (
-        <>
             <Wrapper>
+                <OnboardingBg />
                 <section className="onboarding">
                     {step === 1 && (
                         <div className="onboarding__step onboarding__step--welcome">
+                            <div className="onboarding__content">
                             <h2 className="onboarding__title">where words fail, music speaks</h2>
                             <p className="onboarding__description">Vivamus auctor dui dignissim, sollicitudin nunc ac, aliquam justo. Vestibulum pellentesque lacinia eleifend.</p>
+                            </div>
                             <div className="onboarding__icons">
                                 <div className="onboarding__icon-item--active">
                                     <IoRadioSharp className="onboarding__icon onboarding__icon--radio" />
@@ -42,8 +45,10 @@ export default function Onboarding() {
                     )}
                     {step === 2 && (
                         <div className="onboarding__step onboarding__step--music">
+                            <div className="onboarding__content">
                             <h2 className="onboarding__title">no music no life</h2>
                             <p className="onboarding__description">Vivamus auctor dui dignissim, sollicitudin nunc ac, aliquam justo. Vestibulum pellentesque lacinia eleifend.</p>
+                            </div>
                             <div className="onboarding__icons">
                                 <div className="onboarding__icon-item">
                                     <IoRadioSharp className="onboarding__icon onboarding__icon--radio" />
@@ -60,8 +65,10 @@ export default function Onboarding() {
                     )}
                     {step === 3 && (
                         <div className="onboarding__step onboarding__step--finish">
+                            <div className="onboarding__content">
                             <h2 className="onboarding__title">peace, love and music</h2>
                             <p className="onboarding__description">Vivamus auctor dui dignissim, sollicitudin nunc ac, aliquam justo. Vestibulum pellentesque lacinia eleifend.</p>
+                            </div>
                             <div className="onboarding__icons">
                                 <div className="onboarding__icon-item">
                                     <IoRadioSharp className="onboarding__icon onboarding__icon--radio" />
@@ -78,6 +85,6 @@ export default function Onboarding() {
                     )}
                 </section>
             </Wrapper>
-        </>
+        
     );
 }
