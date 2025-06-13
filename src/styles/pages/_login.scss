@@ -60,6 +60,7 @@
         border: 3px solid $primary;
         border-radius: 3rem;
         text-decoration: none;
+        margin-bottom: 2rem;
     }
 
 }
@@ -69,12 +70,11 @@
     margin: 0 auto;
     justify-content: center;
     align-items: center;
-    margin-top: 2rem;
     background-color: $secondary;
     border-radius: 10rem;
     width: 75px;
     height: 75px;
-
+    margin-bottom: 1rem;
     &__icon {
         font-size: 3rem;
         color: $white;
