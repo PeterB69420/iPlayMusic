@@ -40,7 +40,7 @@ export default function Onboarding() {
                                     <IoIosMusicalNote className="onboarding__icon onboarding__icon--note" />
                                 </div>
                             </div>
-                            <Link to="/home" className="onboarding__button" onClick={nextStep}>skip</Link>
+                            <Link to="/categories" className="onboarding__button" onClick={nextStep}>skip</Link>
                         </div>
                     )}
                     {step === 2 && (
@@ -60,7 +60,7 @@ export default function Onboarding() {
                                     <IoIosMusicalNote className="onboarding__icon onboarding__icon--note" onClick={nextStep} />
                                 </div>
                             </div>
-                            <Link to="/home" className="onboarding__button" onClick={nextStep}>skip</Link>
+                            <Link to="/categories" className="onboarding__button" onClick={nextStep}>skip</Link>
                         </div>
                     )}
                     {step === 3 && (
@@ -80,7 +80,7 @@ export default function Onboarding() {
                                     <IoIosMusicalNote className="onboarding__icon onboarding__icon--note" />
                                 </div>
                             </div>
-                            <Link to="/home" className="onboarding__button" onClick={nextStep}>skip</Link>
+                            <Link to="/categories" className="onboarding__button" onClick={nextStep}>skip</Link>
                         </div>
                     )}
                 </section>

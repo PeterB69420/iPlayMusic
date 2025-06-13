@@ -1,6 +1,7 @@
 @use "../utils/variables" as *;
 
 .header {
+    font-family: 'Poppins', sans-serif;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -9,4 +10,10 @@
     position: relative;
     margin-bottom: 1rem;
     padding: 1rem;
+
+    &__title {
+        
+        font-size: 1rem;
+        color: $primary;
+    }
 }
