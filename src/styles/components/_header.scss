@@ -1,0 +1,12 @@
+@use "../utils/variables" as *;
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: $primary;
+    position: relative;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
