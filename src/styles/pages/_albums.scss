@@ -1,0 +1,83 @@
+@use "../utils/variables" as *;
+
+.albums {
+    font-family: 'Poppins', sans-serif;
+    padding: 1rem;
+
+    &__title {
+        font-size: 2rem;
+        font-weight: bolder;
+        text-transform: capitalize;
+        background: linear-gradient(90deg, $primary-gradient, $secondary-gradient);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        color: transparent;
+        margin-bottom: 2rem;
+    }
+
+    &__section {
+        margin-bottom: 2rem;
+    }
+
+    
+    &__section-header {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 2rem;
+    }
+
+    &__section-title {
+        font-size: 1rem;
+        text-transform: capitalize;
+    }
+
+    &__view-all {
+        text-transform: capitalize;
+        text-decoration: none;
+        color: $secondary;
+    }
+
+    &__featured-list {
+        display: flex;
+        gap: 1rem;
+        overflow-x: auto;
+    }
+
+    &__featured-img {
+        border-radius: 0.5rem;
+    }
+
+    // new releases
+
+    &__artist {
+        font-size: 0.75rem;
+    }
+
+    &__list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+
+    &__thumb {
+        width: 3.125rem;
+        height: 3.125rem;
+        border-radius: 6px;
+        margin-right: 1rem;
+    }
+
+    &__songs {
+        font-size: 0.75rem;
+    }
+
+    &__info {
+        flex-grow: 1;
+    }
+}
