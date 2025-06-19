@@ -1,7 +1,6 @@
-import { FiPlay } from "react-icons/fi";
+
 import Footer from "../components/footer";
 import Header from "../components/header";
-import Playlistbg from "../components/playlistbg";
 import Wrapper from "../components/wrapper";
 import "../styles/pages/_playlist.scss"
 import { IoMdPlay } from "react-icons/io";
@@ -25,8 +24,10 @@ export default function Playlist() {
     return (
         <>
             <Wrapper>
-                <Playlistbg />
-                <Header search heading='PLAYLISTS' />
+            <div className="background">
+                    <div className="background__div"></div>
+                </div>
+                <Header search heading='PLAYLISTS' color="white" />
                 <section className="playlists">
                     <h2 className="playlists__title">playlists</h2>
                     <div>

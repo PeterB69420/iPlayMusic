@@ -1,20 +1,21 @@
 import Footer from "../components/footer";
 import Header from "../components/header";
 import Wrapper from "../components/wrapper";
-import "../styles/pages/_albums.scss"
+import { NavLink } from "react-router-dom";
+import "../styles/pages/_albums.scss";
 
 export default function Albums() {
     const featuredAlbums = [
-        { id: 1, img: '/albumone.png' },
-        { id: 2, img: '/albumtwo.png' },
-        { id: 3, img: '/albumthree.png' },
+        { img: '/albumone.png' },
+        { img: '/albumtwo.png' },
+        { img: '/albumthree.png' },
     ];
 
     const newReleases = [
-        { id: 1, title: 'Old Town Road', artist: 'Billy Ray Cyrus', songs: 12, img: '/albumthree.png' },
-        { id: 2, title: 'Victory Lab', artist: 'Nipsey Hussle', songs: 8, img: '/albumfour.png' },
-        { id: 3, title: 'Thank U, Next', artist: 'Ariana Grande', songs: 13, img: '/albumfive.png' },
-        { id: 4, title: 'Death Race For Love', artist: 'Juice WRLD', songs: 11, img: 'albumsix.png' },
+        { title: 'Old Town Road', artist: 'Billy Ray Cyrus', songs: 12, img: '/albumthree.png' },
+        { title: 'Victory Lab', artist: 'Nipsey Hussle', songs: 8, img: '/albumfour.png' },
+        { title: 'Thank U, Next', artist: 'Ariana Grande', songs: 13, img: '/albumfive.png' },
+        { title: 'Death Race For Love', artist: 'Juice WRLD', songs: 11, img: 'albumsix.png' },
     ];
 
     return (
@@ -29,9 +30,11 @@ export default function Albums() {
                             <p className="albums__view-all">view all</p>
                         </div>
                         <div className="albums__featured-list">
-                            {featuredAlbums.map(album => (
-                                <div className="albums__featured-item" key={album.id}>
-                                    <img src={album.img} alt="Featured" className="albums__featured-img" />
+                            {featuredAlbums.map((album, index) => (
+                                <div className="albums__featured-item" key={index}>
+                                    <NavLink to="/albumsdetails">
+                                        <img src={album.img} alt="Featured" className="albums__featured-img" />
+                                    </NavLink>
                                 </div>
                             ))}
                         </div>
@@ -42,9 +45,11 @@ export default function Albums() {
                             <p className="albums__view-all">view all</p>
                         </div>
                         <ul className="albums__list">
-                            {newReleases.map(album => (
-                                <li className="albums__item" key={album.id}>
-                                    <img src={album.img} alt={album.title} className="albums__thumb" />
+                            {newReleases.map((album, index) => (
+                                <li className="albums__item" key={index}>
+                                    <NavLink to="/albumsdetails">
+                                        <img src={album.img} alt={album.title} className="albums__thumb" />
+                                    </NavLink>
                                     <div className="albums__info">
                                         <h3 className="albums__album-title">{album.title}</h3>
                                         <p className="albums__artist">{album.artist}</p>
@@ -58,5 +63,5 @@ export default function Albums() {
             </Wrapper>
             <Footer />
         </>
-    )
+    );
 }
