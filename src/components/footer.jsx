@@ -12,7 +12,7 @@ export default function Footer() {
             <ul className="dock__list">
                 <li className="dock__item">
                     <NavLink
-                        to="/"
+                        to="/categories"
                         className={({ isActive }) =>
                             `dock__link${isActive ? " dock__link--active" : ""}`
                         }
@@ -22,7 +22,7 @@ export default function Footer() {
                 </li>
                 <li className="dock__item">
                     <NavLink
-                        to="/"
+                        to="/featured"
                         className={({ isActive }) =>
                             `dock__link${isActive ? " dock__link--active" : ""}`
                         }
@@ -32,7 +32,7 @@ export default function Footer() {
                 </li>
                 <li className="dock__item">
                     <NavLink
-                        to="/home"
+                        to="/"
                         className={({ isActive }) =>
                             `dock__link${isActive ? " dock__link--active" : ""}`
                         }
@@ -42,7 +42,7 @@ export default function Footer() {
                 </li>
                 <li className="dock__item">
                     <NavLink
-                        to="/"
+                        to="/playlist"
                         className={({ isActive }) =>
                             `dock__link${isActive ? " dock__link--active" : ""}`
                         }
