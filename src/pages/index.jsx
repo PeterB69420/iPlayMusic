@@ -51,6 +51,7 @@ export default function Login() {
                                     required
                                 />
                                 <IoIosContact className="login__icon" />
+                                
                             </div>
                             <div className="login__form-group">
                                 <label className="login__label" htmlFor="password">Password</label>
