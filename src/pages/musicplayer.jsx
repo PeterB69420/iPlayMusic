@@ -28,7 +28,7 @@ export default function MusicPlayer() {
                         />
                     </div>
                     </div>
-                    <div className="player__waveform" aria-hidden="true" />
+                    <div className="player__waveform"/>
                 <section className="player__info">
                     <h2 className="player__title">{track.title}</h2>
                     <p className="player__artist">{track.artist}</p>
@@ -41,7 +41,6 @@ export default function MusicPlayer() {
                         min="0"
                         max="220"
                         value="0"
-                        aria-label="Playback position"
                     />
                     <div className="player__time">
                         <span className="player__time-current">{track.currentTime}</span>
