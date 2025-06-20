@@ -33,9 +33,15 @@ export default function Playlist() {
                     <h2 className="playlists__title">playlists</h2>
                     <div>
                         <div className="playlists__albums">
+                            <NavLink to="/albums">
                             <img className="playlists__cover" src={playlist.coverImage} alt="Cover" />
+                            </NavLink>
+                            <NavLink to="/albums">
                             <img className="playlists__cover" src={playlist.coverImage} alt="Cover" />
+                            </NavLink>
+                            <NavLink to="/albums">
                             <img className="playlists__cover" src={playlist.coverImage} alt="Cover" />
+                            </NavLink>
                         </div>
                         <h3 className="playlists__top-title">{playlist.title}</h3>
                     </div>
