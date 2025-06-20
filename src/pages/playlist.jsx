@@ -1,4 +1,5 @@
 
+import { NavLink } from "react-router";
 import Footer from "../components/footer";
 import Header from "../components/header";
 import Wrapper from "../components/wrapper";
@@ -42,7 +43,9 @@ export default function Playlist() {
                     <div className="playlists__list">
                         {playlist.songs.map((song, index) => (
                             <div className="playlists__item" key={index}>
+                                <NavLink to="/musicplayer">
                                 <button className="playlists__play-button"><IoMdPlay /></button>
+                                </NavLink>
                                 <div className="playlists__info">
                                     <h4 className="playlists__song-title">{song.title}</h4>
                                     <p className="playlists__song-artist">{song.artist}</p>

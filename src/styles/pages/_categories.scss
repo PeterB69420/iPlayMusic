@@ -36,5 +36,11 @@
         text-transform: capitalize;
     }
 
+    &__dropdown {
+        padding: 1rem;
+    }
     
+    &__subitem {
+       margin-bottom: 0.875rem;
+    }
 }

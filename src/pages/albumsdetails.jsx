@@ -30,7 +30,7 @@ export default function AlbumsDetails() {
                         alt={`${album.title} cover`}
                     />
                     <div className="album-hero__header">
-                        <Header search heading="Album" color="white"  />
+                        <Header search heading="Album" color="white" />
                     </div>
 
                     <div className="album-hero__overlay">
@@ -50,6 +50,7 @@ export default function AlbumsDetails() {
                     <ul className="album-songs__list">
                         {album.songs.map((song, index) => (
                             <li key={index} className="album-songs__item">
+
                                 <button className="album-songs__play-button" aria-label={`Play ${song.title}`}>
                                     <span className="album-songs__play-icon"><IoMdPlay /></span>
                                 </button>
